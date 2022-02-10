@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <sign className="w-28 -ml-5 -mb-7"><Image src="/sign.png" width={720} height={928}/></sign>
         </sidemenu>
-        <content className="p-10 pt-64 md:pt-10 md:ml-52 pr-0 pt-0">
+        <content className="p-10 mt-64 md:pt-10 md:ml-52 pr-0 pt-0">
           <Item link="graphic" src="/2.png" width={2221} height={2686} />
           <Item src="/3.png" width={3508} height={2408} />
           <Item link="digital" src="/1.png" width={2480} height={3508} />
