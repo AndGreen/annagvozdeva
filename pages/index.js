@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-const Item = (src, width, height) => <div><Image src={src} width={width} height={height} /></div>
-const NavItem = ({ children }) => <li className="list-none mt-2 text-sm">{children}</li>
+const Item = ({src, width, height}) => <div><Image src={src} width={width} height={height}/></div>
+const NavItem = ({children}) => <li className="list-none mt-2 text-sm">{children}</li>
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Anna Gvozdeva</title>
-        <meta name="description" content="Illustrator️" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Illustrator️"/>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
 
       <main className="flex flex-1 flex-row min-h-screen">
@@ -18,15 +18,18 @@ export default function Home() {
           <div>
             <h3 className="uppercase font-bold">Gvozdeva Anna</h3>
             <nav className="mt-6">
+              <NavItem>Graphic art</NavItem>
               <NavItem>Digital</NavItem>
               <NavItem>Vector</NavItem>
-              <NavItem>Paper</NavItem>
               <NavItem>Painting</NavItem>
             </nav>
-            </div>
+          </div>
           <sign className="w-28 -ml-5 -mb-7"><Image src="/img/sign.png" width={720} height={928}/></sign>
         </sidemenu>
-        <content className="p-10 ml-52 pr-0"><Image src="/img/1.PNG" width={2408} height={3508} /></content>
+        <content className="p-10 ml-52 pr-0 pt-0">
+          <Item src="/img/2.PNG" width={2221} height={2686}/>
+          <Item src="/img/3.PNG" width={3508} height={2408}/>
+        </content>
 
       </main>
     </div>
