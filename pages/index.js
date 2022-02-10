@@ -27,8 +27,8 @@ export default function Home() {
           <sign className="w-28 -ml-5 -mb-7"><Image src="/img/sign.png" width={720} height={928}/></sign>
         </sidemenu>
         <content className="p-10 ml-52 pr-0 pt-0">
-          <Item src="/img/2.PNG" width={2221} height={2686}/>
-          <Item src="/img/3.PNG" width={3508} height={2408}/>
+          <Item src="/img/2.PNG" width={2221} height={2686} alt="man"/>
+          <Item src="/img/3.PNG" width={3508} height={2408} alt="man2"/>
         </content>
 
       </main>
