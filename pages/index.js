@@ -5,34 +5,27 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Тьмок! 😘</title>
-        <meta name="description" content="Мява ❤️" />
+        <title>Anna Gvozdeva</title>
+        <meta name="description" content="Illustrator️" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-16 py-0 flex flex-1 flex-col justify-center items-center min-h-screen">
-        <h1 className="text-5xl font-bold text-center">
-          Привет мявочка!
-        </h1>
-
-        <p className="text-center mx-0 my-10 leading-normal text-2xl">
-          Здесь будет твой сайт. А пока что тьмок 😘
-        </p>
+      <main className="flex flex-1 flex-row min-h-screen">
+        <sidemenu className="p-10 flex flex-col justify-between min-h-screen bg-gray-100 fixed">
+          <div>
+            <h3 className="uppercase">Gvozdeva Anna</h3>
+            <nav className="mt-5">
+              <li className="list-none">Paper</li>
+              <li className="list-none">Painting</li>
+              <li className="list-none">Digital</li>
+              <li className="list-none">Vector</li>
+            </nav>
+            </div>
+          <sign className="w-28"><Image src="/img/sign.png" width={720} height={928}/></sign>
+        </sidemenu>
+        <content className="p-10 ml-52">/images</content>
 
       </main>
-
-      {/*<footer className={styles.footer}>*/}
-      {/*  <a*/}
-      {/*    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"*/}
-      {/*    target="_blank"*/}
-      {/*    rel="noopener noreferrer"*/}
-      {/*  >*/}
-      {/*    Powered by{' '}*/}
-      {/*    <span className={styles.logo}>*/}
-      {/*      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />*/}
-      {/*    </span>*/}
-      {/*  </a>*/}
-      {/*</footer>*/}
     </div>
   )
 }
