@@ -7,7 +7,7 @@ import { Link, Element } from 'react-scroll';
 const ArtGroup = ({ name, children }) => <Element name={name}>{children}</Element>;
 
 const Art = ({ src, width, height, layout }) =>
-    <Image layout={layout} src={src} width={width} height={height} alt='image' />
+  <div className=''><Image layout={layout} src={src} alt='image' /></div>;
 
 const NavItem = ({ children, to }) =>
   <Link activeClass='font-semibold' to={to} spy={true} smooth={true} offset={50}
@@ -33,15 +33,15 @@ export default function Home() {
               {artGroups.map((i, k) => <NavItem key={k} to={i.name}>{i.title}</NavItem>)}
             </nav>
           </div>
-          <sign className='w-28 -ml-5 -mb-7'><Image src={sign} alt="sign"/></sign>
+          <sign className='w-28 -ml-5 -mb-7'><Image src={sign} alt='sign' /></sign>
         </sidemenu>
         <content className='p-10 mt-64 md:mt-0 md:pt-0 md:ml-52 pr-0 pt-0'>
           {artGroups.map((i, k) =>
             <ArtGroup key={`group-${k}`} name={i.name}>
               {i.arts.map((art, artId) =>
-                <Art key={`group-${k}-${artId}`} {...art} />
+                <Art key={`group-${k}-${artId}`} src={art} />,
               )}
-            </ArtGroup>
+            </ArtGroup>,
           )}
           {/*<ArtGroup name={artGroups[0].name}>*/}
           {/*  <Art link='graphic' src='/2.png' width={2221} height={2686} />*/}

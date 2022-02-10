@@ -1,17 +1,28 @@
 import graphic2 from '../public/img/graphic2.png';
 import graphic1 from '../public/img/graphic1.png';
+import graphic3 from '../public/img/graphic3.PNG';
 import digital1 from '../public/img/digital1.png';
+import digital2 from '../public/img/digital2.PNG';
+import digital3 from '../public/img/digital3.PNG';
+import digital4 from '../public/img/digital4.PNG';
+import digital5 from '../public/img/digital5.PNG';
+import digital6 from '../public/img/digital6.PNG';
 import vector1 from '../public/img/vector1.png';
-import paint1 from '../public/img/paint1.png';
+import vector2 from '../public/img/vector2.PNG';
+import vector3 from '../public/img/vector3.PNG';
+import vector4 from '../public/img/vector4.PNG';
+import vector5 from '../public/img/vector5.PNG';
+import vector6 from '../public/img/vector6.PNG';
+// import paint1 from '../public/img/paint1.png';
+import paint2 from '../public/img/paint2.png';
+import paint3 from '../public/img/paint3.png';
+import paint4 from '../public/img/paint4.png';
 
 export const artGroups = [
   {
-    name: 'graphic', title: 'Graphic art', arts: [
-      { src: graphic1, width: 2221, height: 2686 },
-      { src: graphic2, width: 3508, height: 2408 },
-    ],
+    name: 'graphic', title: 'Graphic art', arts: [graphic1, graphic2, graphic3],
   },
-  { name: 'digital', title: 'Digital', arts: [{ src: digital1, width: 2480, height: 3508 }] },
-  { name: 'vector', title: 'Vector', arts: [{ src: vector1, width: 4000, height: 5607 }] },
-  { name: 'painting', title: 'Painting', arts: [{ src: paint1, width: 3024, height: 4032 }] },
+  { name: 'digital', title: 'Digital', arts: [digital1, digital3, digital4, digital2, digital6, digital5] },
+  { name: 'vector', title: 'Vector', arts: [vector1, vector2, vector3, vector4, vector5, vector6] },
+  { name: 'painting', title: 'Painting', arts: [paint2, paint3, paint4] },
 ];
