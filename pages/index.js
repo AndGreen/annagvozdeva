@@ -28,7 +28,7 @@ export default function Home() {
         <sidemenu
           className='bg-white z-10 p-10 md:pt-16 flex flex-row md:flex-col justify-between min-w-full md:min-w-0 md:min-w-auto md:min-h-screen fixed '>
           <div>
-            <h3 className='uppercase font-bold'>Gvozdeva Anna</h3>
+            <h3 className='uppercase font-bold'>Anna Gvozdeva</h3>
             <nav className='mt-6'>
               {artGroups.map((i, k) => <NavItem key={k} to={i.name}>{i.title}</NavItem>)}
             </nav>
