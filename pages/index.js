@@ -1,22 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Тьмок! 😘</title>
         <meta name="description" content="Мява ❤️" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className="px-16 py-0 flex flex-1 flex-col justify-center items-center min-h-screen">
+        <h1 className="text-5xl font-bold text-center">
           Привет мявочка!
         </h1>
 
-        <p className={styles.description}>
+        <p className="text-center mx-0 my-10 leading-normal text-2xl">
           Здесь будет твой сайт. А пока что тьмок 😘
         </p>
 
