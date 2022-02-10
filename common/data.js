@@ -1,11 +1,17 @@
+import graphic2 from '../public/img/graphic2.png';
+import graphic1 from '../public/img/graphic1.png';
+import digital1 from '../public/img/digital1.png';
+import vector1 from '../public/img/vector1.png';
+import paint1 from '../public/img/paint1.png';
+
 export const artGroups = [
   {
     name: 'graphic', title: 'Graphic art', arts: [
-      { link: 'graphic', src: '/2.png', width: 2221, height: 2686 },
-      { link: 'graphic', src: '/3.png', width: 3508, height: 2408 },
+      { src: graphic1, width: 2221, height: 2686 },
+      { src: graphic2, width: 3508, height: 2408 },
     ],
   },
-  { name: 'digital', title: 'Digital', arts: [{ link: 'graphic', src: '/1.png', width: 2480, height: 3508 }] },
-  { name: 'vector', title: 'Vector', arts: [{ link: 'graphic', src: '/v1.png', width: 4000, height: 5607 }] },
-  { name: 'painting', title: 'Painting', arts: [{ link: 'graphic', src: '/p1.png', width: 3024, height: 4032 }] },
+  { name: 'digital', title: 'Digital', arts: [{ src: digital1, width: 2480, height: 3508 }] },
+  { name: 'vector', title: 'Vector', arts: [{ src: vector1, width: 4000, height: 5607 }] },
+  { name: 'painting', title: 'Painting', arts: [{ src: paint1, width: 3024, height: 4032 }] },
 ];
