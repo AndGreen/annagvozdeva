@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import sign from '../public/img/sign.png';
 import { artGroups } from '../common/data';
 import { Link, Element } from 'react-scroll';
 
@@ -32,7 +33,7 @@ export default function Home() {
               {artGroups.map((i, k) => <NavItem key={k} to={i.name}>{i.title}</NavItem>)}
             </nav>
           </div>
-          <sign className='w-28 -ml-5 -mb-7'><Image src='/sign.png' width={720} height={928} /></sign>
+          <sign className='w-28 -ml-5 -mb-7'><Image src={sign} alt="sign"/></sign>
         </sidemenu>
         <content className='p-10 mt-64 md:mt-0 md:pt-0 md:ml-52 pr-0 pt-0'>
           {artGroups.map((i, k) =>
