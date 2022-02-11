@@ -17,12 +17,18 @@ import vector6 from '../public/img/vector6.PNG';
 import paint2 from '../public/img/paint2.png';
 import paint3 from '../public/img/paint3.png';
 import paint4 from '../public/img/paint4.png';
+import paper2 from '../public/img/paper2.png';
+import paper3 from '../public/img/paper3.png';
+import paper4 from '../public/img/paper4.png';
+import paper5 from '../public/img/paper5.png';
+import paper7 from '../public/img/paper7.png';
+
 
 export const artGroups = [
   {
-    name: 'graphic', title: 'Graphic art', arts: [graphic1, graphic2, graphic3],
+    name: 'graphics', title: 'Graphics', arts: [graphic1, graphic2, graphic3],
   },
-  { name: 'digital', title: 'Digital', arts: [digital1, digital3, digital4, digital2, digital6, digital5] },
-  { name: 'vector', title: 'Vector', arts: [vector1, vector2, vector3, vector4, vector5, vector6] },
-  { name: 'painting', title: 'Painting', arts: [paint2, paint3, paint4] },
+  { name: 'arts', title: 'Arts', arts: [digital1, digital3, digital4, digital2, digital6, digital5] },
+  { name: 'vectors', title: 'Vectors', arts: [vector1, vector2, vector3, vector4, vector5, vector6] },
+  { name: 'papers', title: 'Papers', arts: [paint2, paper2, paint4, paper4, paper5, paper7] },
 ];
