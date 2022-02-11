@@ -3,17 +3,24 @@ import Image from 'next/image';
 import sign from '../public/img/sign.png';
 import { artGroups } from '../common/data';
 import { Link, Element } from 'react-scroll';
+import { useWindowDimensions } from '../common/hooks';
 
 const ArtGroup = ({ name, children }) => <Element name={name}>{children}</Element>;
 
 const Art = ({ src, width, height, layout }) =>
   <div className=''><Image layout={layout} src={src} alt='image' /></div>;
 
-const NavItem = ({ children, to }) =>
-  <Link activeClass='font-semibold' to={to} spy={true} smooth={true} offset={50}
-        duration={500}>
+const NavItem = ({ children, to }) => {
+  const { width: windowWidth } = useWindowDimensions();
+  const isMobile = windowWidth <= 768;
+  const mobileHeaderOffeset = 235;
+
+  return <Link activeClass='font-semibold' to={to} spy={true} smooth={true} offset={isMobile && -mobileHeaderOffeset}
+               duration={500}>
     <li className='list-none mt-2 text-sm cursor-pointer'>{children}</li>
   </Link>;
+};
+
 
 export default function Home() {
   return (
