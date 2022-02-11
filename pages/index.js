@@ -43,13 +43,6 @@ export default function Home() {
               )}
             </ArtGroup>,
           )}
-          {/*<ArtGroup name={artGroups[0].name}>*/}
-          {/*  <Art link='graphic' src='/2.png' width={2221} height={2686} />*/}
-          {/*</ArtGroup>*/}
-          {/*<Art src='/3.png' width={3508} height={2408} />*/}
-          {/*<Art link='digital' src='/1.png' width={2480} height={3508} />*/}
-          {/*<Art link='vector' src='/v1.png' width={4000} height={5607} />*/}
-          {/*<Art link='painting' src='/p1.png' width={3024} height={4032} />*/}
         </content>
 
       </main>
