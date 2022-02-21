@@ -15,7 +15,7 @@ const NavItem = ({ children, to }) => {
   const isMobile = windowWidth <= 768;
   const mobileHeaderOffeset = 235;
 
-  return <Link activeClass='font-semibold' to={to} spy={true} smooth={true} offset={isMobile && -mobileHeaderOffeset}
+  return <Link activeClass='font-semibold' to={to} spy={true} smooth={true} offset={isMobile ? -mobileHeaderOffeset : 0}
                duration={500}>
     <li className='list-none mt-2 text-sm cursor-pointer'>{children}</li>
   </Link>;
@@ -28,6 +28,7 @@ export default function Home() {
       <Head>
         <title>Anna Gvozdeva</title>
         <meta name='description' content='Illustrator️' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
