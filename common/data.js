@@ -13,6 +13,9 @@ import vector3 from '../public/img/vector3.PNG';
 import vector4 from '../public/img/vector4.PNG';
 import vector5 from '../public/img/vector5.PNG';
 import vector6 from '../public/img/vector6.PNG';
+import vector7 from '../public/img/vector7.svg';
+import vector8 from '../public/img/vector8.svg';
+import vector9 from '../public/img/vector9.svg';
 // import paint1 from '../public/img/paint1.png';
 import paint2 from '../public/img/paint2.png';
 // import paint3 from '../public/img/paint3.png';
@@ -29,6 +32,6 @@ export const artGroups = [
     name: 'graphics', title: 'Graphics', arts: [graphic1, graphic2, graphic3],
   },
   { name: 'arts', title: 'Arts', arts: [digital1, digital3, digital4, digital2, digital6, digital5] },
-  { name: 'vectors', title: 'Vectors', arts: [vector1, vector2, vector3, vector4, vector5, vector6] },
+  { name: 'vectors', title: 'Vectors', arts: [vector1, vector2, vector3, vector4, vector5, vector6, vector7, vector8, vector9] },
   { name: 'papers', title: 'Papers', arts: [paint2, paper2, paint4, paper4, paper5, paper7] },
 ];
