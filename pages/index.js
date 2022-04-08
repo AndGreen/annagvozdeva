@@ -8,7 +8,7 @@ import { useWindowDimensions } from '../common/hooks';
 const ArtGroup = ({ name, children }) => <Element name={name}>{children}</Element>;
 
 const Art = ({ src, width, height, layout }) =>
-  <div className=''><Image layout={layout} src={src} alt='image' /></div>;
+  <div className='flex flex-col items-center'><Image layout={layout} src={src} alt='image' /></div>;
 
 const NavItem = ({ children, to }) => {
   const { width: windowWidth } = useWindowDimensions();
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           <sign className='w-28 -ml-5 -mb-7'><Image src={sign} alt='sign' /></sign>
         </sidemenu>
-        <content className='p-10 mt-64 md:mt-0 md:pt-0 md:ml-52 pr-0 pt-0'>
+        <content className='justify-center p-10 mt-64 md:mt-0 md:pt-0 md:ml-52 pr-0 pt-0'>
           {artGroups.map((i, k) =>
             <ArtGroup key={`group-${k}`} name={i.name}>
               {i.arts.map((art, artId) =>
